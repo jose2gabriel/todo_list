@@ -1,73 +1,40 @@
-# React + TypeScript + Vite
+# 📝 My Tasks - Projeto de Estudos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Oi! Esse aqui é o meu projeto de lista de tarefas (To-Do List) que eu fiz usando **React** e **TypeScript**. O objetivo foi criar algo simples, bonito e que funcione bem, praticando o que estou aprendendo de front-end.
 
-Currently, two official plugins are available:
+## 🚀 O que eu usei?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Vite**: Pra deixar o projeto rápido pra rodar e desenvolver.
+- **React**: Pra organizar a lógica da página em componentes.
+- **TypeScript**: Pra me ajudar a não cometer erros bobos no código.
+- **Tailwind CSS**: Pra fazer o visual (CSS) de um jeito mais prático.
+- **Lucide React**: Pros ícones ficarem bonitinhos.
 
-## React Compiler
+## ✨ O que o sistema faz?
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. **Adiciona tarefas**: Só digitar e clicar em "Adicionar".
+2. **Marca como feito**: Clique no círculo pra riscar a tarefa.
+3. **Edita**: Se escreveu algo errado, dá pra mudar.
+4. **Exclui**: Se não quiser mais a tarefa, é só apagar no lixinho.
+5. **Filtros**: Dá pra ver só as que faltam ou só as que já terminei.
+6. **Tema Escuro (Dark Mode)**: Pra não cansar a vista à noite 🌙.
+7. **Salva tudo**: Mesmo se fechar o navegador, as tarefas continuam lá (usei o `localStorage`).
 
-## Expanding the ESLint configuration
+## 🛠️ Como rodar na sua máquina
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Se quiser testar, é só seguir esses passos no terminal:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. Instalar as dependências:
+   ```bash
+   npm install
+   ```
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+2. Rodar o projeto:
+   ```bash
+   npm run dev
+   ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+3. Abrir no navegador o link que vai aparecer (geralmente `http://localhost:5173`).
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+*Projeto feito para fins de aprendizado!* 🎓
