@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { 
   Plus, 
-  Search, 
   Moon, 
   Sun, 
   Menu, 
@@ -11,7 +10,6 @@ import {
   Trash2,
   CheckCircle2,
   Circle,
-  X,
   User
 } from 'lucide-react';
 import { cn } from './lib/utils';
